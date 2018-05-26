@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+
+  <div class="center">
+    <div class="title">
+      <h1>Rafael Ribeiro</h1>
+      <hr>
+      <h2>Full Stack Web Developer</h2>
+    </div>
+    <img class="photo" src="https://media.licdn.com/dms/image/C5103AQE6IsCCFQ8ofw/profile-displayphoto-shrink_200_200/0?e=1531958400&v=beta&t=D-9TihZjhNfyotXlwx0LtfwN6qQSEX0tGpwO89BWw5c" alt="A photo of myself">
+  </div>
+
+  <article class="about-me col-8" style="z-index: -1; margin: auto;">
+    <hr style="width: 80%;">
+    <p>Absolutely passionate about programming, and always eager to learn new
+      things and to improve myself daily. Quick learner and detail-oriented,
+      able to work well in teams and to communicate clearly. I am currently
+      enrolled in the Computer Programming & Analysis Program at Seneca College,
+      where I'm learning and mastering a range of programming languages,
+      frameworks, and technologies like C, C++, HTML5, CSS, Javascript, JQuery,
+      Bootstrap, Node.js, Express.js, MongoDB, PostgreSQL, and Oracle SQL. In
+      my free time, I like to play around with Python, sometimes developing
+      simple games with Pygame, and some other times developing web apps with
+      Django. Currently looking for a co-op position for the Fall term, where I
+      hope to be able to contribute to the success of the Company while
+      continuing to improve myself.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </article>
+
+  <article class="content col-8" style="margin: auto;">
+    <h2>Skills</h2>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="table-responsive-md">
+      <table class="skills table">
+        <tr>
+          <td><img src="{% static 'media/python.png' %}" alt="Python"></td>
+          <td><img src="{% static 'media/django.png' %}" alt="Django"></td>
+          <td><img src="{% static 'media/js.png' %}" alt="JavaScript"></td>
+        </tr>
+        <tr>
+          <td><img src="{% static 'media/html.png' %}" alt="HTML5"></td>
+          <td><img src="{% static 'media/css.png' %}" alt="CSS"></td>
+          <td><img src="{% static 'media/c.jpg' %}" alt="C"></td>
+        </tr>
+      </table>
+    </div>
+  </article>
+
+
+{% endblock %}

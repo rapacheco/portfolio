@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+
+<div class="content col-8">
+  <h1>Contact Me</h1>
+  <hr>
+  <p>Please fill the form below to send a message directly to me. I'll be sure to answer it in no time!</p>
+
+  <form class="container msgForm" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input class="btn btn-dark" type="submit" value="Send">
+  </form>
+
+</div>
+
+{% endblock %}
