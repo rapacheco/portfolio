@@ -27,6 +27,10 @@ SECRET_KEY = 'p!&ciw(!nr+3coj9cnfcos3d-(#jliyy=k-=0eta90^9y=f2xs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+ADMINS = [
+    ('Rafael', 'rapachecobeiro@hotmail.com'),
+]
+
 ALLOWED_HOSTS = []
 
 
