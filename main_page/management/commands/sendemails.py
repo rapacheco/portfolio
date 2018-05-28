@@ -20,12 +20,12 @@ class Command(BaseCommand):
                 mail += msg.name + '\n' + msg.email + '\n' + msg.msg + '\n' + str(msg.date) + '\n\n'
 
         try:
-            # mail_admins(
-            #     'Emails received today',
-            #     mail,
-            #     fail_silently=False,
-            # )
-            self.stdout.write(mail)
+            mail_admins(
+                'Emails received today',
+                mail,
+                fail_silently=False,
+            )
+            # self.stdout.write(mail)
         except SMTPException:
             raise CommandError("Unable to send email")
         else:
