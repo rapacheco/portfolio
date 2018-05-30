@@ -25,13 +25,13 @@
           <a class="nav-link" href="{% url 'index' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="{% url 'main_page:projects' %}">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'main_page:contact' %}">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="{% url 'main_page:about' %}">About</a>
         </li>
       </ul>
       <ul class="nav-side nav justify-content-end">
@@ -48,7 +48,7 @@
     <footer class="footer">
       <div class="container">
         <a href="https://github.com/rapacheco"><img src="{% static 'media/github.png' %}" alt="GitHub"></a>
-        <a href="https://www.facebook.com/rapachecobeiro"><img src="{% static 'media/facebook.png' %}" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/rafael-pacheco-ribeiro/"><img src="{% static 'media/linkedin.png' %}" alt="LinkedIn"></a>
         <a href="https://twitter.com/rapachecobeiro"><img src="{% static 'media/Twitter.png' %}" alt="Twitter"></a>
       </div>
     </footer>

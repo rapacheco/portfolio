@@ -13,13 +13,20 @@ def contact(request):
         form = MessageForm(request.POST)
         if form.is_valid():
             m = form.save()
-            # name = form.cleaned_data['name']
-            # email = form.cleaned_data['email']
-            # msg = form.cleaned_data['msg']
-            # m = Message(name=name, email=email, msg=msg)
-            # m.save()
-
             return HttpResponseRedirect("/")
     else:
         form = MessageForm()
     return render(request, 'contact.html', {'form': form})
+
+def about(request):
+    return render(request, 'about.html')
+
+def projects(request):
+    return render(request, 'projects.html')
+
+def resume(request):
+    with open(os.path.join(MEDIA_DIR, 'rafaelRibeiroResumePortfolio.docx', 'rb')) as doc:
+        response = HttpResponse(doc.read())
+        response['content_type'] = 'application/docx'
+        response['Content-Disposition'] = 'attachment;rafaelRibeiroResumePortfolio.docx'
+        return response
